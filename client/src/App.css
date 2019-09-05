@@ -7,7 +7,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     background-image: url('https://wallpapercave.com/wp/wp3594947.jpg');
     background-size: cover;
@@ -17,4 +17,5 @@ body{
 .hero-title{
     grid-column-start: 2;
     grid-row-start: 2;
+    color: white;
 }

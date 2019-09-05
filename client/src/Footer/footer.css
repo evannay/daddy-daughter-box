@@ -1,0 +1,18 @@
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #216869;
+    color: white;
+}
+
+.footer-contact-container {
+}
+
+.footer-link-container {
+    display: flex;
+    justify-content: space-evenly;
+}

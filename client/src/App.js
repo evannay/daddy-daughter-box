@@ -3,7 +3,6 @@ import Navbar from './Navbar'
 import Header from './Header'
 import About from './About'
 import Cart from './Cart/Index'
-import './App.css'
 
 const App = () => {
     return (

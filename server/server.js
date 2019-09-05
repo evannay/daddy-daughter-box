@@ -4,6 +4,7 @@ const app = express()
 const PORT = 3334
 
 app.use('/', express.json())
+app.use('/box', require('./routes/boxRoutes'))
 
 mongoose.connect('mongodb://localhost:27017/dddb-app', { useNewUrlParser: true })
     .then(() => {

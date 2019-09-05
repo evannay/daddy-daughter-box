@@ -1,6 +1,6 @@
 const express = require('express')
 const boxRouter = express.Router()
-const Box = require('..models/box.js')
+const Box = require('../models/box')
 
 boxRouter.routes('/')
     .get((req, res) => {

@@ -2,7 +2,7 @@ const express = require('express')
 const boxRouter = express.Router()
 const Box = require('../models/box')
 
-boxRouter.routes('/')
+boxRouter.route('/')
     .get((req, res) => {
         Box.find((err, boxes) => {
             if (err) return res.status(500).send(err)
@@ -16,8 +16,8 @@ boxRouter.routes('/')
             return res.status(201).send(newBoxTheme)
         })
     })
-boxRouter.routes('/:_id')
-    
+boxRouter.route('/:_id')
+
     .get((req, res) => {
         const _id = req.params._id
         Box.findById(_id, (err, todo) => {

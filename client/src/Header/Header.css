@@ -1,6 +1,10 @@
 body{
     margin: 0
 }
+@font-face{
+    src: url('../Assets/Roboto-Bold.ttf');
+    font-family: Roboto;
+}
 
 .hero-image{
     height: 100vh;
@@ -8,7 +12,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
-    background-image: url('https://wallpapercave.com/wp/wp2475885.jpg');
+    background-image: url('https://wallpapersite.com/images/pages/pic_h/10212.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -17,9 +21,20 @@ body{
 .hero-title{
     grid-column-start: 2;
     grid-row-start: 2;
-    background: white;
+    /* background: white; */
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: Roboto;
+    color: white;
+}
+.hero-title > h1{
+    margin: 0;
+    font-size: 80px;
+    color: #ffe01b;  
+}
+.hero-title > img{
+    height: 100px;
 }

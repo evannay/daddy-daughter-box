@@ -6,15 +6,20 @@ body{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
-    background-image: url('https://wallpapercave.com/wp/wp3594947.jpg');
+    background-image: url('https://wallpapercave.com/wp/wp2475885.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 .hero-title{
     grid-column-start: 2;
     grid-row-start: 2;
-    color: white;
+    background: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

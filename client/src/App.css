@@ -2,7 +2,7 @@ body{
     margin: 0
 }
 
-.hero-img{
+.hero-image{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

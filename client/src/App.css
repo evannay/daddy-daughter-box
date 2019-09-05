@@ -1,0 +1,19 @@
+body{
+    margin: 0
+}
+
+.hero-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-content: center;
+    justify-content: center;
+    background-image: url('https://wallpapercave.com/wp/wp3594947.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-title{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}

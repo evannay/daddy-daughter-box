@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import Header from './Header'
 import About from './About'
+import Cart from './Cart'
 import './App.css'
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
             <Header />
             <Navbar />
             <About />
+            <Cart />
         </div>
     )
 }

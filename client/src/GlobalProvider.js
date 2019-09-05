@@ -1,5 +1,7 @@
 import React from 'react'
 
+const { Provider, Consumer } = React.createContext()
+
 class GlobalProvider extends Component {
     constructor(){
         super()

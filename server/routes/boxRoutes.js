@@ -10,7 +10,7 @@ boxRouter.route('/')
         })
     })
     .post((req, res) => {
-        const newBoxTheme = new Themedbox(req.body)
+        const newBoxTheme = new Box(req.body)
         newBoxTheme.save(err => {
             if (err) return res.status(500).send(err)
             return res.status(201).send(newBoxTheme)
@@ -20,7 +20,7 @@ boxRouter.route('/:_id')
 
     .get((req, res) => {
         const _id = req.params._id
-        Box.findById(_id, (err, todo) => {
+        Box.findById(_id, (err, box) => {
             if (err) return res.status(500).send(err)
             return res.status(200).send(box)
         })
@@ -30,7 +30,7 @@ boxRouter.route('/:_id')
         Box.findByIdAndUpdate(_id,
             req.body,
             {new: true },
-            (err, todo) => {
+            (err, box) => {
                 if (err) return res.status(500).send(err)
                 return res.status(200).send(box)
             })

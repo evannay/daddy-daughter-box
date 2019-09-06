@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    margin: 0;
+    margin: auto;
     padding: 0;
     height: 50pt;
     align-items: center;
@@ -10,6 +10,9 @@
     position: sticky;
     top: 0;
     z-index: 1;
+    width: 80%;
+    border-bottom: 1px solid black;
+    background-color: white;
 }
 
 .navbar-container > a {

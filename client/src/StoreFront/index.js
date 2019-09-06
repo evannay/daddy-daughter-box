@@ -33,7 +33,6 @@ const StoreFront = (props) => {
             </div>
         </div>
             <Link to='/ThemeChoices'><button className='subsciption-box-option-button'>Next</button></Link>
-            {/* <ThemeBoxContainer/> */}
         </div>
     )
 }

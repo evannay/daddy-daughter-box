@@ -15,8 +15,6 @@ class GlobalProvider extends React.Component {
             isSubscribed4: false,
             savedbox: JSON.parse(localStorage.getItem('savedbox')) || [],
             subscriptOption: JSON.parse(localStorage.getItem('subscriptionOption')) || "",
-
-
         }
     }
     getThemedBoxes = () => {
@@ -66,10 +64,10 @@ class GlobalProvider extends React.Component {
             })
     }
   
-    saveBoxTheme = (theme) => {
+    saveBoxTheme = (box) => {
         this.setState(prevState => ({
             isSaved: true,
-            savedbox: [...prevState.savedbox, theme],
+            savedbox: [...prevState.savedbox, box],
         }),
             () => {
                 console.log(this.state.savedbox)

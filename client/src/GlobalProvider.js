@@ -9,7 +9,10 @@ class GlobalProvider extends React.Component {
         this.state = {
             themedBoxes: [],
             isSaved: false,
-            savedbox: JSON.parse(localStorage.getItem('savedbox')) || []
+            isSubscribed: false,
+            savedbox: JSON.parse(localStorage.getItem('savedbox')) || [],
+            subscriptOption: ""
+
 
         }
     }
@@ -19,6 +22,17 @@ class GlobalProvider extends React.Component {
             this.setState({ themedBoxes: response.data }) 
         }) 
     }
+    savedSubscription = (subscriptionPlan) => {
+        this.setState(prevState => ({
+            isSubscribed: true,
+            subscriptOption: subscriptionPlan,
+        }),
+            () => {
+                console.log(this.state.subscriptOption)
+                localStorage.setItem('subscriptOption', JSON.stringify(this.state.subscriptOption))
+            })
+    }
+  
     saveBoxTheme = (theme) => {
         this.setState(prevState => ({
             isSaved: true,
@@ -35,6 +49,7 @@ class GlobalProvider extends React.Component {
             <Provider value={{
                 getThemedBoxes: this.getThemedBoxes,
                 saveBoxTheme: this.saveBoxTheme,
+                savedSubscription: this.savedSubscription,
                 ...this.state
         }}>
             {this.props.children}

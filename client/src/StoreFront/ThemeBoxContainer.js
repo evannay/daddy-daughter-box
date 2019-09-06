@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ThemedBox from './ThemeBox'
+import CustomBox from './Custombox'
 import { withGlobalProvider} from '../GlobalProvider.js'
 
 class ThemeBoxContainer extends Component {

@@ -31,7 +31,7 @@ const StoreFront = () => {
             </div>
         </div>
             <button className='subsciption-box-option-button'>Next</button>
-            <ThemeBoxContainer/>
+            {/* <ThemeBoxContainer/> */}
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './custombox'
+import './custombox.css'
 
 class CustomBox extends Component {
     openForm() {

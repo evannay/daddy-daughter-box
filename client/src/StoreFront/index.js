@@ -1,4 +1,5 @@
 import React from 'react'
+import ThemeBoxContainer from './ThemeBoxContainer'
 import './storeFront.css'
 
 const StoreFront = () => {
@@ -29,7 +30,8 @@ const StoreFront = () => {
                 <p>a month</p>
             </div>
         </div>
-            <button className= 'subsciption-box-option-button'>Next</button>
+            <button className='subsciption-box-option-button'>Next</button>
+            <ThemeBoxContainer/>
         </div>
     )
 }

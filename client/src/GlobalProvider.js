@@ -15,10 +15,9 @@ class GlobalProvider extends React.Component {
     }
     getThemedBoxes = () => {
         axios.get('/box').then(response => {
-            console.log(response.data)
+            // console.log(response.data)
             this.setState({ themedBoxes: response.data }) 
-        })
-        
+        }) 
     }
     saveBoxTheme = (e) => {
         this.setState(prevState => ({

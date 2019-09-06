@@ -4,6 +4,7 @@ import Header from './Header'
 import About from './About'
 import Cart from './Cart/Index'
 import StoreFront from './StoreFront/index'
+import ThemeBoxContainer from './StoreFront/ThemeBoxContainer'
 import Footer from './Footer'
 
 import { Switch, Route } from 'react-router-dom'
@@ -18,6 +19,7 @@ const App = () => {
                 <Route exact path='/' component={About} />
                 <Route path='/cart' component={Cart}/>
                 <Route path='/shop' component={StoreFront} />
+                <Route path='/ThemeChoices' component={ThemeBoxContainer}/>
             </Switch>
             <Footer />
         </div>

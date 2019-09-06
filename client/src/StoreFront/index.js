@@ -1,8 +1,10 @@
 import React from 'react'
-import ThemeBoxContainer from './ThemeBoxContainer'
+// import ThemeBoxContainer from './ThemeBoxContainer'
+import { Link } from 'react-router-dom'
 import './storeFront.css'
 
-const StoreFront = () => {
+const StoreFront = (props) => {
+    console.log(props)
     return (
         <div className='store-front-container'>
             <h1>Choose your time line</h1>
@@ -30,7 +32,7 @@ const StoreFront = () => {
                 <p>a month</p>
             </div>
         </div>
-            <button className='subsciption-box-option-button'>Next</button>
+            <Link to='/ThemeChoices'><button className='subsciption-box-option-button'>Next</button></Link>
             {/* <ThemeBoxContainer/> */}
         </div>
     )

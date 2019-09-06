@@ -9,24 +9,24 @@ class GlobalProvider extends React.Component {
         this.state = {
             themedBoxes: [],
             isSaved: false,
-            saved: JSON.parse(localStorage.getItem('saved')) || []
+            savedbox: JSON.parse(localStorage.getItem('savedbox')) || []
 
         }
     }
     getThemedBoxes = () => {
         axios.get('/box').then(response => {
-            console.log(response.data)
+            // console.log(response.data)
             this.setState({ themedBoxes: response.data }) 
-        })
-        
+        }) 
     }
-    saveBoxTheme = (e) => {
+    saveBoxTheme = (theme) => {
         this.setState(prevState => ({
             isSaved: true,
-            saved: [...prevState.saved],
+            savedbox: [...prevState.savedbox, theme],
         }),
             () => {
-                localStorage.setItem('saved', JSON.stringify(this.state.saved))
+                console.log(this.state.savedbox)
+                localStorage.setItem('savedbox', JSON.stringify(this.state.savedbox))
             })
     }
     

@@ -11,7 +11,7 @@ class GlobalProvider extends React.Component {
             isSaved: false,
             isSubscribed: false,
             savedbox: JSON.parse(localStorage.getItem('savedbox')) || [],
-            subscriptOption: ""
+            subscriptOption: JSON.parse(localStorage.getItem('subscriptionOption')) || "",
 
 
         }
@@ -28,7 +28,7 @@ class GlobalProvider extends React.Component {
             subscriptOption: subscriptionPlan,
         }),
             () => {
-                console.log(this.state.subscriptOption)
+                // console.log(this.state.subscriptOption)
                 localStorage.setItem('subscriptOption', JSON.stringify(this.state.subscriptOption))
             })
     }
@@ -43,6 +43,9 @@ class GlobalProvider extends React.Component {
                 localStorage.setItem('savedbox', JSON.stringify(this.state.savedbox))
             })
     }
+    deleteTheme = (theme) => {
+        
+    }
     
     render(){
         return(
@@ -50,6 +53,7 @@ class GlobalProvider extends React.Component {
                 getThemedBoxes: this.getThemedBoxes,
                 saveBoxTheme: this.saveBoxTheme,
                 savedSubscription: this.savedSubscription,
+                deleteTheme: this.deleteTheme,
                 ...this.state
         }}>
             {this.props.children}

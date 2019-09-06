@@ -1,7 +1,11 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
+import './custombox'
+
 class CustomBox extends Component {
     openForm() {
-        //isdfosjfdoajsf
+        //how to creat a pop up compented on click 
+        //make sure to add a close pop up on to the form once it has been selected
+        // will need to acess state inotred to get a list of the themes that are currently stored in the data base
     }
     render() {
     
@@ -12,15 +16,6 @@ class CustomBox extends Component {
             <button onClick={this.openForm}>Select</button>
         </div>
         )
-    
     }
 }
 export default CustomBox
-
-class ShowAlert extends Component {
-    showAlert() {
-        alert("Im an alert");
-    }
-
-    render() {
-        return <button onClick={this.showAlert}

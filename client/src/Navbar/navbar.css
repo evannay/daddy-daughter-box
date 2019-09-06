@@ -2,22 +2,38 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    margin: 0;
+    margin: auto;
     padding: 0;
     height: 50pt;
     align-items: center;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 80%;
+    border-bottom: 1px solid black;
+    background-color: white;
 }
 
 .navbar-container > a {
     text-decoration: none;
     color: black;
     font-size: 12pt;
+    margin: auto;
 }
 
 @media(min-width: 1025px){
-    .navbar-container > a:hover{
+    .navbar-about:hover{
+        font-size: 18pt;
+        text-decoration: underline;
+    }
+    .navbar-shop:hover{
+        font-size: 18pt;
+        text-decoration: underline;
+    }
+    .navbar-cart:hover{
         font-size: 18pt;
         text-decoration: underline;
     }
 }
+

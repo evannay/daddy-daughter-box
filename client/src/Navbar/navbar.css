@@ -7,17 +7,30 @@
     height: 50pt;
     align-items: center;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .navbar-container > a {
     text-decoration: none;
     color: black;
     font-size: 12pt;
+    margin: auto;
 }
 
 @media(min-width: 1025px){
-    .navbar-container > a:hover{
+    .navbar-about:hover{
+        font-size: 18pt;
+        text-decoration: underline;
+    }
+    .navbar-shop:hover{
+        font-size: 18pt;
+        text-decoration: underline;
+    }
+    .navbar-cart:hover{
         font-size: 18pt;
         text-decoration: underline;
     }
 }
+

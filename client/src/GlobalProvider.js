@@ -74,9 +74,17 @@ class GlobalProvider extends React.Component {
                 localStorage.setItem('savedbox', JSON.stringify(this.state.savedbox))
             })
     }
-    deleteTheme = (theme) => {
-        
+
+    deleteBoxTheme = (box) => {
+        this.setState(prevState => ({
+            savedbox: prevState.savedbox.filter(selected => selected !== (box))
+        }),
+            () => {
+                localStorage.setItem('savedbox', JSON.stringify(this.state.savedbox))
+            }
+        )
     }
+
     
     render(){
         return(
@@ -84,7 +92,7 @@ class GlobalProvider extends React.Component {
                 getThemedBoxes: this.getThemedBoxes,
                 saveBoxTheme: this.saveBoxTheme,
                 savedSubscription: this.savedSubscription,
-                deleteTheme: this.deleteTheme,
+                deleteBoxTheme: this.deleteBoxTheme,
                 savedSubscription2: this.savedSubscription2,
                 savedSubscription3: this.savedSubscription3,
                 savedSubscription4: this.savedSubscription4,

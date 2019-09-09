@@ -10,9 +10,6 @@ class GlobalProvider extends React.Component {
             themedBoxes: [],
             isSaved: false,
             isSubscribed: false,
-            isSubscribed2: false,
-            isSubscribed3: false,
-            isSubscribed4: false,
             savedbox: JSON.parse(localStorage.getItem('savedbox')) || [],
             subscriptOption: JSON.parse(localStorage.getItem('subscriptionOption')) || "",
         }
@@ -26,36 +23,6 @@ class GlobalProvider extends React.Component {
     savedSubscription = (subscriptionPlan) => {
         this.setState(prevState => ({
             isSubscribed: !prevState.isSubscribed,
-            subscriptOption: subscriptionPlan,
-        }),
-            () => {
-                // console.log(this.state.subscriptOption)
-                localStorage.setItem('subscriptOption', JSON.stringify(this.state.subscriptOption))
-            })
-    }
-    savedSubscription2 = (subscriptionPlan) => {
-        this.setState(prevState => ({
-            isSubscribed2: !prevState.isSubscribed2,
-            subscriptOption: subscriptionPlan,
-        }),
-            () => {
-                // console.log(this.state.subscriptOption)
-                localStorage.setItem('subscriptOption', JSON.stringify(this.state.subscriptOption))
-            })
-    }
-    savedSubscription3 = (subscriptionPlan) => {
-        this.setState(prevState => ({
-            isSubscribed3: !prevState.isSubscribed3,
-            subscriptOption: subscriptionPlan,
-        }),
-            () => {
-                // console.log(this.state.subscriptOption)
-                localStorage.setItem('subscriptOption', JSON.stringify(this.state.subscriptOption))
-            })
-    }
-    savedSubscription4 = (subscriptionPlan) => {
-        this.setState(prevState => ({
-            isSubscribed4: !prevState.isSubscribed4,
             subscriptOption: subscriptionPlan,
         }),
             () => {

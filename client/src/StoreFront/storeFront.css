@@ -21,6 +21,7 @@
     width: 150px;
     height: 90%;
     margin: 10px 5px 0px 5px;  
+    background-color: bisque;
     
 }
 .subsciption-box-option-selected{
@@ -34,9 +35,9 @@
     margin: 10px 5px 0px 5px;  
 }
 
-.subsciption-box-option:hover{
+/* .subsciption-box-option:hover{
     background-color: lightgreen;
-}
+} */
 
 .subscription-price-box{
     display:flex;

@@ -14,32 +14,35 @@ class GlobalProvider extends React.Component {
             subscriptOption: JSON.parse(localStorage.getItem('subscriptionOption')) || "",
         }
     }
+
     getThemedBoxes = () => {
         axios.get('/box').then(response => {
-            // console.log(response.data)
             this.setState({ themedBoxes: response.data }) 
         }) 
     }
+
     savedSubscription = (subscriptionPlan) => {
         this.setState(prevState => ({
             isSubscribed: !prevState.isSubscribed,
             subscriptOption: subscriptionPlan,
         }),
             () => {
-                // console.log(this.state.subscriptOption)
+    
                 localStorage.setItem('subscriptOption', JSON.stringify(this.state.subscriptOption))
             })
     }
-  
-    saveBoxTheme = (box) => {
+
+   
+
+    saveBoxTheme = (box, _id) => {
         this.setState(prevState => ({
-            isSaved: true,
             savedbox: [...prevState.savedbox, box],
         }),
             () => {
                 console.log(this.state.savedbox)
                 localStorage.setItem('savedbox', JSON.stringify(this.state.savedbox))
             })
+        
     }
 
     deleteBoxTheme = (box) => {
@@ -50,6 +53,7 @@ class GlobalProvider extends React.Component {
                 localStorage.setItem('savedbox', JSON.stringify(this.state.savedbox))
             }
         )
+        
     }
 
     

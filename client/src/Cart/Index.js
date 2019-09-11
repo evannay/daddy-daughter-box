@@ -1,5 +1,5 @@
 import React from 'react'
-import ThemedBox from '../StoreFront/ThemeBox'
+import ThemedBox from '../StoreFront/ThemeboxContainer/ThemeBox'
 import { withGlobalProvider } from '../GlobalProvider'
 import './cart.css'
 import '../StoreFront/storeFront.css'

@@ -69,8 +69,8 @@ const StoreFront = props => {
           <p>a month</p>
         </div>
       </div>
-      <Link to="/ThemeChoices">
-        <button className="subsciption-box-option-button">Next</button>
+      <Link to="/cart">
+        <button className="subsciption-box-option-button">Checkout</button>
       </Link>
     </div>
   );

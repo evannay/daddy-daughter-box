@@ -14,7 +14,7 @@ class ThemeBoxContainer extends Component {
             <div className="ThemeBoxesContainer">
             {mappedBoxes}
             <CustomBox/>
-            <Link to='/cart'><button>Checkout!</button></Link>
+            <Link to='/shop'><button>Next</button></Link>
         </div>)
     }
 } export default withGlobalProvider(ThemeBoxContainer)

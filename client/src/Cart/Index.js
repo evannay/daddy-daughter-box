@@ -23,7 +23,7 @@ return (
         </div>
         <div className="total-container">
             <h1>Total</h1>
-            <h3> {price} X box Number</h3>
+            <h3>{price} X box Number</h3>
         </div>
 
     </div>

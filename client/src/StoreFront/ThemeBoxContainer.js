@@ -10,11 +10,15 @@ class ThemeBoxContainer extends Component {
     }
     render() {
         const mappedBoxes = this.props.themedBoxes.map((box) => <ThemedBox key={box._id} box={box} />)
-        return (
+        return (<>
             <div className="ThemeBoxesContainer">
-            {mappedBoxes}
-            <CustomBox/>
-            <Link to='/shop'><button>Next</button></Link>
-        </div>)
+                {mappedBoxes}
+                <CustomBox />
+            </div>
+            <div className="switch-to-subscription">
+                <h1>Pick a Subscription</h1>
+                <Link to='/shop'><button className="next-button subsciption-box-option-button">Next</button></Link>
+            </div> 
+        </>)
     }
 } export default withGlobalProvider(ThemeBoxContainer)

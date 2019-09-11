@@ -10,7 +10,7 @@ const ThemeBox = (props) => {
 
 
     return (
-        <div className="box-container">
+        <div className={props.class}>
             <h2>{theme}</h2>
             <p>{imgUrl} Image goes here</p>
             {

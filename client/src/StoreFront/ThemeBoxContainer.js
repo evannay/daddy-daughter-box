@@ -9,7 +9,7 @@ class ThemeBoxContainer extends Component {
         this.props.getThemedBoxes()
     }
     render() {
-        const mappedBoxes = this.props.themedBoxes.map((box) => <ThemedBox key={box._id} box={box} />)
+        const mappedBoxes = this.props.themedBoxes.map((box) => <ThemedBox key={box._id} box={box} class='box-container'/>)
         return (
             <div className="ThemeBoxesContainer">
             {mappedBoxes}

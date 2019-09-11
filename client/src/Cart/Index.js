@@ -8,7 +8,7 @@ const Cart = (props) => {
     console.log(props)
     
     let { lenght, price } = props.subscriptOption
-    const mappedThemes = props.savedbox.map((box) => <ThemedBox key={box._id} box={box} />)
+    const mappedThemes = props.savedbox.map((box) => <ThemedBox key={box._id} box={box} class='cart-box-container'/>)
     
     
 return (

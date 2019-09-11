@@ -8,7 +8,7 @@ const About = () => {
                 <div className='about-us-image'>
                 </div>
                 <div className='about-us-text'>
-                    <h1>About us and stuff</h1>
+                    <h1>Our Product</h1>
                     <p>some text to tell people about us Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui soluta voluptatem suscipit asperiores laborum alias. Nesciunt voluptatem est, quos repellendus maiores, tempore nulla asperiores nostrum accusantium cum odit voluptate dolores!
                     </p>
                     <button>Get Started!</button>

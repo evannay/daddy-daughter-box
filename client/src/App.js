@@ -6,6 +6,7 @@ import Cart from './Cart/Index'
 import StoreFront from './StoreFront/index'
 import ThemeBoxContainer from './StoreFront/ThemeBoxContainer'
 import Footer from './Footer'
+import './styles.css'
 
 import { Switch, Route } from 'react-router-dom'
 

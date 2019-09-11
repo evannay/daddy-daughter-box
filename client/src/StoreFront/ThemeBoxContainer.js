@@ -9,13 +9,8 @@ class ThemeBoxContainer extends Component {
         this.props.getThemedBoxes()
     }
     render() {
-<<<<<<< HEAD
         const mappedBoxes = this.props.themedBoxes.map((box) => <ThemedBox key={box._id} box={box} class='box-container'/>)
-        return (
-=======
-        const mappedBoxes = this.props.themedBoxes.map((box) => <ThemedBox key={box._id} box={box} />)
         return (<>
->>>>>>> multiboxfunctionfix
             <div className="ThemeBoxesContainer">
                 {mappedBoxes}
                 <CustomBox />

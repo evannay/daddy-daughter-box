@@ -15,7 +15,7 @@ const ThemeBox = (props) => {
             <p>{imgUrl} Image goes here</p>
             {
                boxExists
-                    ? <button onClick={() => props.deleteBoxTheme(props.box, _id)} className="delete-them-button">Delete/De-select</button>
+                    ? <button onClick={() => props.deleteBoxTheme(props.box, _id)} className="delete-them-button">X</button>
                     : <button onClick={() => props.saveBoxTheme(props.box, _id)} className="save-theme-button">Select Theme</button>
             }
             

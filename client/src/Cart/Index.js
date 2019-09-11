@@ -13,15 +13,17 @@ const Cart = (props) => {
     
 return (
     <div className="cart-container">
-        <div>ThemeBoxes Selected</div>
-        {mappedThemes}
-        <div className="selected-subcription">Subcription Package selected
+        <div className='cart-title'>ThemeBoxes Selected</div>
+        <div className='cart-boxes'>
+            {mappedThemes}
+        </div>
+        <div className="selected-subscription">Subcription Package selected
             <h3>{lenght}</h3>
             <h3>{price}</h3>
         </div>
         <div className="total-container">
             <h1>Total</h1>
-            <h1> {price} X box Number</h1>
+            <h3> {price} X box Number</h3>
         </div>
 
     </div>

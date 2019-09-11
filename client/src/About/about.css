@@ -39,6 +39,13 @@
     align-items: center;
     color: whitesmoke
 }
+.get-started-button{
+    border: none;
+    background-color: #F2D0C9;
+    font-size: 20px;
+    margin-left: 80%;
+    padding: 8px;
+}
 .about-cover-title-text{
     background-color: rgba(173, 63, 81, 0.7);
     width: 100%;

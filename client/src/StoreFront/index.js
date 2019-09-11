@@ -6,8 +6,10 @@ import "./storeFront.css";
 const StoreFront = props => {
   return (
     <div className="store-front-container">
-      <h1>Choose your time line</h1>
-      <p>Your box will be selected from Theme choices</p>
+      <div>
+        <h1>Choose your time line</h1>
+        <p>Your box will be selected from Theme choices</p>
+      </div>
       <div className="subscription-price-box">
         <div
           className={

@@ -9,10 +9,10 @@ body{
 .hero-image{
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
-    background-image: url('https://wallpapercave.com/wp/wp2475885.jpg');
+    background-image: url('https://imgix.bustle.com/uploads/image/2018/3/2/14a56269-9c45-4b7c-89ef-7bba018693f0-fotolia_110356619_subscription_monthly_m.jpg?w=960&h=540&fit=crop&crop=faces&auto=format&q=70');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -33,7 +33,7 @@ body{
 .hero-title > h1{
     margin: 0;
     font-size: 80px;
-    color: #ffe01b;  
+    color: #F2CC87;  
 }
 .hero-title > img{
     height: 100px;

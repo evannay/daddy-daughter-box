@@ -70,3 +70,13 @@
     width: 100px;
     border: none;
 }
+@media(max-width: 768px){
+    .store-front-container{
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+    .subsciption-box-option{
+        font-size: 8pt;
+    }
+}

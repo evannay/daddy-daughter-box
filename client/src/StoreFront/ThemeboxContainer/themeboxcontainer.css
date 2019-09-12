@@ -72,6 +72,10 @@
     width: 20vh;
 }
 
+
+.theme-box-images {
+    height: 150px;
+}
 @media only screen and (min-width: 825px) {
      .ThemeBoxesContainer{
         flex-direction: row;

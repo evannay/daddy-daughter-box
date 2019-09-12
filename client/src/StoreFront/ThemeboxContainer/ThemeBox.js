@@ -12,7 +12,7 @@ const ThemeBox = (props) => {
     return (
         <div className={props.class}>
             <h2>{theme}</h2>
-            <p>{imgUrl} Image goes here</p>
+            <img src={imgUrl} alt='' className='theme-box-images'/>
             {
                boxExists
                     ? <div onClick={() => props.deleteBoxTheme(props.box, _id)} className="delete-theme-button"><p>Your item has been added to the cart</p><button className="delete-them-button">X</button></div>

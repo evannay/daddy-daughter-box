@@ -68,8 +68,19 @@
 }
 
 .next-button {
-    height: 10vh;
-    width: 20vh;
+    display:flex;
+    height: 5vh;
+    width: 10vh;
+    border-radius: 30px;
+    box-shadow: 5px 5px 8px rgba(43, 67, 45, 0.865);
+    border: none;
+    background-color: rgb(81, 118, 84);
+    font-size: 20pt;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color:rgba(43, 67, 45, 0.865);
 }
 
 @media only screen and (min-width: 825px) {
@@ -80,7 +91,8 @@
      }
 
      .box-container {
-          width: 50%;
+          width: 5
+          0%;
      }
 
 

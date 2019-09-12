@@ -18,7 +18,7 @@ class ThemeBoxContainer extends Component {
             </div>
             <div className="switch-to-subscription">
                 <h1>Pick a Subscription</h1>
-                <Link to='/shop'><button className="next-button subsciption-box-option-button">Next</button></Link>
+                <Link to='/shop'className="next-button">Next</Link>
             </div> 
         </>)
     }

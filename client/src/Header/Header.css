@@ -30,7 +30,8 @@ body{
     font-family: Roboto;
     color: white;
 }
-.hero-title > h1{
+.header-link {
+    text-decoration: none;
     margin: 0;
     font-size: 50px;
     color: #F2CC87;  
@@ -43,7 +44,7 @@ body{
 }
 
 @media only screen and (min-width: 600px) {
-    .hero-title>h1 {
+    .header-link {
         font-size: 90px;
     }
      .hero-title>h3{

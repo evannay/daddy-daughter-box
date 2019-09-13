@@ -66,9 +66,10 @@
     margin-bottom: 48px;
 }
 .about-image{
-    background-image: url('../Assets/IMG_3285.jpg');
-    background-size: cover;
+    background-image: url('../Assets/Daddy-pic.jpg');
+    background-size: 400px;
     background-position: center;
+    background-repeat: no-repeat;
 }
 @media(max-width: 764px){
     .about-grid-one-two{
@@ -90,5 +91,8 @@
     }
     .get-started-button{
         font-size: 15px;
+    }
+    .about-image {
+        background-size: 225px;
     }
 }

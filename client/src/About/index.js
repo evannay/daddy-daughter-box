@@ -10,7 +10,7 @@ const About = () => {
                 </div>
                 <div className='about-us-text'>
                     <h1>Our Product</h1>
-                    <p>some text to tell people about us Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui soluta voluptatem suscipit asperiores laborum alias. Nesciunt voluptatem est, quos repellendus maiores, tempore nulla asperiores nostrum accusantium cum odit voluptate dolores!
+                    <p>It's pretty simple, really. . . Pick a theme, or two, or three, and pick your subscription.  We'll do the rest.
                     </p>
                     <Link to='/ThemeChoices'><button className='get-started-button'>Get Started!</button></Link>
                 </div>
@@ -23,7 +23,7 @@ const About = () => {
             <div className='about-grid-two-one'>
                 <div className='about-us-text'>
                     <h1>Meet Us!</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quis sequi maiores modi impedit nemo repellat perspiciatis voluptatibus neque quod, officiis, deleniti consectetur beatae enim cum officia sunt est facilis.</p>
+                    <p>We are the founders/developers of Daddy Daughter Dater Boxes, or DDDB.  This is who we are.</p>
                 </div>
                 <div className='about-image'>
                     

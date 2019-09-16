@@ -34,7 +34,8 @@ body{
     text-decoration: none;
     margin: 0;
     font-size: 50px;
-    color: #F2CC87;  
+    /* color: #F2CC87;  */
+    color: brown; 
 }
 .hero-title>h3{
     font-size: 15px;

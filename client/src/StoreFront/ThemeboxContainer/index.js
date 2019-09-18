@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ThemeBox from './ThemeBox'
-import CustomBox from '../Custombox'
+// import CustomBox from '../Custombox'
 import { withGlobalProvider} from '../../GlobalProvider.js'
 import { Link } from 'react-router-dom'
 import './themeboxcontainer.css'
@@ -14,7 +14,7 @@ class ThemeBoxContainer extends Component {
         return (<>
             <div className="ThemeBoxesContainer">
                 {mappedBoxes}
-                <CustomBox />
+                {/* <CustomBox /> */}
             </div>
             <div className="switch-to-subscription">
                 <h1>Pick a Subscription</h1>
